@@ -1,0 +1,227 @@
+body{
+    /* background-color: aquamarine; */
+    background-color: rgb(137, 109, 137);
+    min-height: inherit;
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;padding: 0px;
+    
+}
+nav{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height: 5em;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100; 
+    margin-top: -95px;
+}
+nav ul li{
+   cursor:pointer;
+}
+.company img{
+    height: 75px;
+    padding: 0 20px;
+}
+.company{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+nav ul li{
+    padding:0 2em;
+}
+.bottom{
+    position: sticky;
+    height: 120px;
+    /* background-color:lightcoral; */
+    /* color: white; */
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction:column; */
+    text-shadow: 0 0.3rem 0.5rem rgba(206, 17, 17, 0.4);
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(136, 49, 49, 0.4);
+}
+.container{
+    width: 70%;
+    /* height: 0%; */
+    margin-top: 90px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin-left:  auto;
+    margin-right: auto;
+    border-radius: 60px;
+    padding: 30px;
+    padding-top: 40px;
+    background-image: url('bg.jpeg');
+    background-position:center;
+    background-attachment: inherit;
+    justify-content: space-between;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+    position: static;  
+
+}
+#songprogressBar{
+    width: 60vw;
+    /* text-align: center; */
+    cursor: pointer;
+}
+.icons{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    margin:20px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+   height: 40px; 
+   display: flex;
+   justify-content: space-between;
+   width:100%;
+   border:1px solid lightpink;
+   color:lightgray;
+   margin: 5px 40px;
+   background-attachment: scroll;
+   align-items: center;
+   border-radius: 35px;
+   font-size: 62.5%;
+} 
+.songItem:hover{
+    color: rgb(169, 34, 124);
+}
+.songItem img{
+   width: 40px;
+   margin: 0px 30px;
+   border-radius: 25px;
+   object-fit: cover;
+}
+.playtime{
+    margin:0 80px;
+    /* height: 12px; */
+    /* display: contents; */
+}
+/* .playtime img{
+    cursor: pointer;
+    margin: 0px 20px;
+} */
+.songcollection{
+    position: absolute;
+    left: 30vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 10px;
+   
+}
+.songcollection img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.gif2{
+    opacity: 1;
+    transition:opacity 1s ease-in;
+}
+.gif{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    position: absolute;
+    /* align-items: center; */
+    right: 15%;
+    top: 18%;
+    
+}
+.songcontainer{
+    /* margin-top: 0px; */
+    height: 350px;   
+}
+.songItem span{
+    display:table-cell;
+    justify-content: space-between;
+    padding:4px;
+}
+.songItem ul img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.dropdownstudio button a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 400%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    border-radius: 1.2rem;
+    color: aqua;
+    padding: 5px;
+    text-decoration: none;
+}
+.about a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    color: white;
+    background-color: rgb(169, 34, 124);
+
+}
+.songlistplay:active{
+    color: solid brown;
+}
+.songname{
+    place-items:center;
+}
+.icons .fas:hover{
+    color: grey;
+}
+.progress_duration{
+  margin: 1rem;
+ }
+ .about{
+     margin: 2rem;
+ }
+ button{
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    border-style: none;
+ }
+ button:hover{
+    background-color: rgb(169, 34, 124);
+ }
+ .songlist{
+    margin-bottom: 190px;
+ }
+
+ @media (max-width:1100px){
+    #gifeq{
+        display: none;
+    }
+ }
